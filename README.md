@@ -1,8 +1,8 @@
 # minimum-node-version
 
 [![Build Status](https://travis-ci.org/hugojosefson/minimum-node-version.svg?branch=master)](https://travis-ci.org/hugojosefson/minimum-node-version)
-[![npm page](https://img.shields.io/npm/v/@hugojosefson/minimum-node-version.svg)](https://npmjs.com/package/@hugojosefson/minimum-node-version)
-[![License ISC](https://img.shields.io/npm/l/@hugojosefson/minimum-node-version.svg)](https://tldrlegal.com/license/-isc-license)
+[![npm page](https://img.shields.io/npm/v/minimum-node-version.svg)](https://npmjs.com/package/minimum-node-version)
+[![License ISC](https://img.shields.io/npm/l/minimum-node-version.svg)](https://tldrlegal.com/license/-isc-license)
 [![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](http://semver.org/spec/v2.0.0.html)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,23 +13,9 @@
 
 ## Introduction
 
-This is a simple CLI app in Node.js, using ES Modules.
+Figures out the lowest version of Node.js that satisfies `engines.node` in `package.json`.
 
-### Using as a template
-
-_To use this project as a template for your own project, you can do this:_
-
-```bash
-mkdir my-cli
-cd my-cli
-git init
-curl https://codeload.github.com/hugojosefson/minimum-node-version/tar.gz/master | tar xzv --strip-components=1
-git add --all
-git commit -m 'Add template files from minimum-node-version.'
-yarn
-```
-
-_Then edit `package.json` and go on developing!_
+Can be quite useful for which `node` version to configure `babel-preset-env` for.
 
 ## Prerequisite
 
@@ -44,16 +30,16 @@ nvm install stable
 ## Installation
 
 ```bash
-npm install -g @hugojosefson/minimum-node-version
+npm install -g minimum-node-version
 ```
 
-## Usage
+## CLI Usage
 
 ```bash
-minimum-node-version "Your Name"
+minimum-node-version
 ```
 
-Will say hello to you.
+Will print the Node.js version.
 
 ## Programmatic access
 

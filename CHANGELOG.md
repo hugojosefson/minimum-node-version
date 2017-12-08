@@ -12,3 +12,4 @@ _New unreleased changes are listed here, and moved down to a release number when
 ### Added
 
 - Use [nodejs-example-cli](https://github.com/hugojosefson/nodejs-example-cli/) as template.
+- First implementation.

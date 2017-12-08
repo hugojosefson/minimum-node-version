@@ -1,7 +1,7 @@
 {
-  "name": "@hugojosefson/example-cli",
-  "version": "1.0.2",
-  "description": "Example Node.js CLI app.",
+  "name": "minimum-node-version",
+  "version": "0.0.0",
+  "description": "Figures out the lowest version of Node.js that satisfies package.json engines.node",
   "main": "src/api-commonjs.js",
   "module": "src/api.mjs",
   "files": [
@@ -9,10 +9,10 @@
     "src"
   ],
   "bin": {
-    "example-cli": "bin/example-cli.js"
+    "minimum-node-version": "bin/minimum-node-version.js"
   },
   "scripts": {
-    "start": "bin/example-cli.js You",
+    "start": "bin/minimum-node-version",
     "test": "run-s lint mocha",
     "mocha": "mocha --require @std/esm 'test/**/*-test.{m,}js'",
     "mocha-watch": "mocha --watch --require @std/esm 'test/**/*-test.{m,}js'",
@@ -28,15 +28,15 @@
       "git add"
     ]
   },
-  "repository": "hugojosefson/nodejs-example-cli",
+  "repository": "hugojosefson/minimum-node-version",
   "keywords": [
     "node",
     "nodejs",
-    "cli",
-    "bin",
-    "esmodule",
-    "example",
-    "template"
+    "version",
+    "minimum",
+    "semver",
+    "babel-preset-env",
+    "satisfies"
   ],
   "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
   "license": "ISC",

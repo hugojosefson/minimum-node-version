@@ -2,3 +2,5 @@
 /.idea/
 /*.log
 .*.swp
+/.esm-cache/
+/*.tgz

@@ -18,4 +18,9 @@ describe('minimumNodeVersion', () => {
       minimumNodeVersion()
             .then(version => assert.ok(VERSION_STRING.test(version)))
     )
+
+  it('should resolve to 4.0.0 for this project', () =>
+      minimumNodeVersion()
+            .then(version => assert.equal(version, '4.0.0'))
+    )
 })

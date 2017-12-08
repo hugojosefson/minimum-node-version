@@ -12,7 +12,7 @@
     "minimum-node-version": "bin/cli.js"
   },
   "scripts": {
-    "start": "bin/cli",
+    "start": "bin/cli.js",
     "test": "run-s lint mocha",
     "mocha": "mocha --require @std/esm 'test/**/*-test.{m,}js'",
     "mocha-watch": "mocha --watch --require @std/esm 'test/**/*-test.{m,}js'",
@@ -58,6 +58,10 @@
   },
   "dependencies": {
     "@std/esm": "^0.18.0",
-    "engine-check": "^1.0.1"
+    "engine-check": "^1.0.1",
+    "expected-node-version": "^1.0.2",
+    "node-version-data": "^1.0.1",
+    "pify": "^3.0.0",
+    "semver": "^5.4.1"
   }
 }

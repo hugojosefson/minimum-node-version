@@ -9,10 +9,10 @@
     "src"
   ],
   "bin": {
-    "minimum-node-version": "bin/minimum-node-version.js"
+    "minimum-node-version": "bin/cli.js"
   },
   "scripts": {
-    "start": "bin/minimum-node-version",
+    "start": "bin/cli",
     "test": "run-s lint mocha",
     "mocha": "mocha --require @std/esm 'test/**/*-test.{m,}js'",
     "mocha-watch": "mocha --watch --require @std/esm 'test/**/*-test.{m,}js'",

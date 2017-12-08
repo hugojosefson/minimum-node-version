@@ -1,0 +1,21 @@
+/* eslint-env mocha */
+
+import assert from 'assert'
+import minimumNodeVersion from '../src/api'
+
+const VERSION_STRING = /^[0-9]+\.[0-9]+\.[0-9]+$/
+
+describe('minimumNodeVersion', () => {
+  it('is a function', () =>
+        assert.ok(typeof minimumNodeVersion === 'function')
+    )
+
+  it('should return a Promise', () =>
+        assert.ok(typeof minimumNodeVersion().then === 'function')
+    )
+
+  it('should resolve to a version string', () =>
+      minimumNodeVersion()
+            .then(version => assert.ok(VERSION_STRING.test(version)))
+    )
+})

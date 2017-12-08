@@ -1,17 +1,9 @@
-/**
- * Generates a greeting
- *
- * @param {String} whom - Whom to greet.
- * @returns {Promise.<String>} A Promise of a greeting.
- * @name generateGreeting
- */
-export { default as generateGreeting } from './generate-greeting'
+import minimumNodeVersion from './minimum-node-version'
 
 /**
- * Returns the supplied argument.
+ * Figures out the minimum Node.js version that satisfies the project's configuration.
  *
- * @param {*} a - Any argument.
- * @returns {*} The argument a.
- * @name identity
+ * @returns {Promise.<String>} A Promise of the lowest compatible Node.js version.
+ * @name minimumNodeVersion
  */
-export { default as identity } from './identity'
+export default minimumNodeVersion

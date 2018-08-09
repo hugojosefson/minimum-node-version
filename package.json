@@ -61,7 +61,7 @@
     "engine-check": "^1.0.1",
     "expected-node-version": "^1.0.2",
     "node-version-data": "^1.0.1",
-    "pify": "^3.0.0",
+    "pify": "^4.0.0",
     "semver": "^5.4.1"
   }
 }

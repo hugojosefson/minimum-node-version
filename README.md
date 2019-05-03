@@ -8,11 +8,6 @@
 [![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](http://semver.org/spec/v2.0.0.html)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/minimum-node-version/inbox.svg)](https://waffle.io/hugojosefson/minimum-node-version)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/minimum-node-version/to%20do.svg)](https://waffle.io/hugojosefson/minimum-node-version)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/minimum-node-version/in%20progress.svg)](https://waffle.io/hugojosefson/minimum-node-version)
-[![Waffle.io](https://img.shields.io/waffle/label/hugojosefson/minimum-node-version/done.svg)](https://waffle.io/hugojosefson/minimum-node-version)
-
 ## Introduction
 
 Figures out the lowest version of Node.js that satisfies `engines.node` in `package.json`.

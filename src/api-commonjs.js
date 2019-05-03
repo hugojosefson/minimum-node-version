@@ -1,1 +1,1 @@
-module.exports = require('@std/esm')(module)('./api')
+module.exports = require('esm')(module)('./api')

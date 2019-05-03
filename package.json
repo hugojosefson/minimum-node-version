@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Figures out the lowest version of Node.js that satisfies package.json engines.node",
   "main": "src/api-commonjs.js",
-  "module": "src/api.mjs",
+  "module": "src/api.js",
   "files": [
     "bin",
     "src"
@@ -14,13 +14,12 @@
   "scripts": {
     "start": "bin/cli.js",
     "test": "run-s lint mocha",
-    "mocha": "mocha --require @std/esm 'test/**/*-test.{m,}js'",
-    "mocha-watch": "mocha --watch --require @std/esm 'test/**/*-test.{m,}js'",
+    "mocha": "mocha --require esm 'test/**/*-test.{m,}js'",
+    "mocha-watch": "mocha --watch --require esm 'test/**/*-test.{m,}js'",
     "lint": "standard",
     "lint-fix": "standard --fix",
     "prepare": "run-s documentation",
-    "documentation": "documentation readme --section=API --shallow --format=md src/api.mjs",
-    "precommit": "lint-staged"
+    "documentation": "documentation readme --section=API --shallow --format=md src/api.js"
   },
   "lint-staged": {
     "*.{mjs,js,jsx}": [
@@ -40,28 +39,33 @@
   ],
   "author": "Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)",
   "license": "ISC",
-  "comment-engines.node": "Not using babel, code seems to work from v4.0.0 and up.",
+  "comment-engines.node": "Not using babel, code seems to work from v6.0.0 and up.",
   "engines": {
-    "node": ">=4.0.0"
+    "node": "8.* || >= 10.*"
   },
-  "comment-@std/esm.cjs": "Allow destructuring import from common-js modules.",
-  "@std/esm": {
+  "comment-esm.cjs": "Allow destructuring import from common-js modules.",
+  "esm": {
     "cjs": true
   },
   "devDependencies": {
-    "documentation": "^5.3.2 <5.3.3",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "mocha": "^4.0.1",
+    "documentation": "^10.1.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "mocha": "^6.1.4",
     "npm-run-all": "^4.1.2",
-    "standard": "^10.0.3"
+    "standard": "^12.0.1"
   },
   "dependencies": {
-    "@std/esm": "^0.18.0",
     "engine-check": "^1.0.1",
+    "esm": "^3.2.22",
     "expected-node-version": "^1.0.2",
     "node-version-data": "^1.0.1",
-    "pify": "^3.0.0",
-    "semver": "^5.4.1"
+    "pify": "^4.0.1",
+    "semver": "^6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

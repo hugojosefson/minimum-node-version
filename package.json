@@ -1,6 +1,6 @@
 {
   "name": "minimum-node-version",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Figures out the lowest version of Node.js that satisfies package.json engines.node",
   "main": "src/api-commonjs.js",
   "module": "src/api.js",

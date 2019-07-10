@@ -1,8 +1,7 @@
 # minimum-node-version
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hugojosefson/minimum-node-version.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/hugojosefson/minimum-node-version.svg?branch=master)](https://travis-ci.org/hugojosefson/minimum-node-version)
+[![Greenkeeper badge](https://badges.greenkeeper.io/hugojosefson/minimum-node-version.svg)](https://greenkeeper.io/)
 [![npm page](https://img.shields.io/npm/v/minimum-node-version.svg)](https://npmjs.com/package/minimum-node-version)
 [![License ISC](https://img.shields.io/npm/l/minimum-node-version.svg)](https://tldrlegal.com/license/-isc-license)
 [![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-lightgrey.svg)](http://semver.org/spec/v2.0.0.html)

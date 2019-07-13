@@ -48,9 +48,9 @@
     "cjs": true
   },
   "devDependencies": {
-    "documentation": "^12.0.0",
+    "documentation": "^12.0.1",
     "husky": "^3.0.0",
-    "lint-staged": "^9.1.0",
+    "lint-staged": "^9.2.0",
     "mocha": "^6.1.4",
     "npm-run-all": "^4.1.2",
     "standard": "^13.0.2"
@@ -61,7 +61,7 @@
     "expected-node-version": "^1.0.2",
     "node-version-data": "^1.0.1",
     "pify": "^4.0.1",
-    "semver": "^6.1.1"
+    "semver": "^6.2.0"
   },
   "husky": {
     "hooks": {

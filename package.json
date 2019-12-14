@@ -61,7 +61,7 @@
     "expected-node-version": "^1.0.2",
     "node-version-data": "^1.0.1",
     "pify": "^4.0.1",
-    "semver": "^6.2.0"
+    "semver": "^7.0.0"
   },
   "husky": {
     "hooks": {

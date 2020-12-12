@@ -41,7 +41,7 @@
   "license": "ISC",
   "comment-engines.node": "Not using babel, code seems to work from v6.0.0 and up.",
   "engines": {
-    "node": "^10.13.0 || >=11.10.1"
+    "node": "^10.13.0 || >=12.0.0"
   },
   "comment-esm.cjs": "Allow destructuring import from common-js modules.",
   "esm": {

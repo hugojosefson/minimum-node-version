@@ -48,20 +48,20 @@
     "cjs": true
   },
   "devDependencies": {
-    "documentation": "^12.0.1",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.2.0",
-    "mocha": "^7.2.0",
+    "documentation": "^13.1.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "mocha": "^8.2.1",
     "npm-run-all": "^4.1.2",
-    "standard": "^14.3.4"
+    "standard": "^16.0.3"
   },
   "dependencies": {
     "engine-check": "^1.0.1",
     "esm": "^3.2.25",
     "expected-node-version": "^1.0.2",
     "node-version-data": "^1.0.1",
-    "pify": "^4.0.1",
-    "semver": "^6.2.0"
+    "pify": "^5.0.0",
+    "semver": "^7.3.4"
   },
   "husky": {
     "hooks": {

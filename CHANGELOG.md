@@ -9,8 +9,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 _New unreleased changes are listed here, and moved down to a release number when released._
 
+## [3.0.0] - 2020-12-12
+
 ### Security
 
+- Upgrade dependencies.
+
+### Changed
+
+- **BREAKING** Require Node.js version `^10.13.0 || >=12.0.0`
 - Upgrade dependencies.
 
 ## [2.0.2] - 2019-07-13
